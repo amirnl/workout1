@@ -1,0 +1,43 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+  </head>
+  <ul class="nav justify-content-end navbar navbar-dark navbar-expand-lg bg-dark mt-3 mx-3">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'home'%}"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'equipment' %}">وسایل</a>
+    </li>                              
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'team' %}">تیم</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'renew' %}">تمدید</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'money' %}">بودجه</a>
+    </li>
+</ul>
+
+  
+
+{% block content %}
+
+{% endblock %}
+
+
+
+</body>
+</html>
